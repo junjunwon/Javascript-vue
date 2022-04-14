@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="./style.css" rel="stylesheet" />
+        <script src="./dayoff.js"></script>
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    </head>
+    <script>
+        $(document).ready(function() {
+
+            // 버튼을 생성함과 동시에 이벤트 핸들러를 추가합니다.
+
+            $("#create2").button().on("click", function(event) {
+
+                alert("버튼1이 눌러졌습니다.");
+
+        });
+    });
+    </script>
+    <body>
+        <div class="box">
+            <form id="createForm"> 
+                <ul>
+                    <input id='year' name='year' type='text' placeholder="연도"/><br />
+                    <input id='month' name='month' type='text' placeholder="월"/> <br />
+                    <input id='day' name='day' type='text' placeholder="일"/> <br />
+                    <input id='startH' name='startH' type='text' placeholder="시작 시간"/> <br />
+                    <input id='endH' name='endH' type='text' placeholder="종료 시간"/> <br />
+                    <input id='num' name='num' type='text' placeholder="인원 수"/> <br />
+                    <input id='steak' name='steak' type='checkbox'/>
+                    <label for='steak'>수비드 체크</label><br />
+                    
+                </ul>
+                <div hef="#" id="create">
+                    <button id='create2' type='button'>예약문자 생성하기</button>
+                </div>
+            </form>
+        </div>
+    </body>
+    <footer>
+
+    </footer>
+</html>

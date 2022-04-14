@@ -1,0 +1,14 @@
+.box{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.box input[type=text]{
+    border : solid 2px #A52A2A;
+    background-color: #deb887;
+    margin-bottom:10px;
+    width:200px;
+    height:20px;
+    padding:10px;
+}
